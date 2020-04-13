@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*订单详情*/
+.user_order_detail{ margin:40px 15px 0; border:1px solid #aec7e5; position:relative; padding:20px; overflow: hidden;}
+.user_order_detail .od_lant{ width:130px; height:30px; line-height:30px; text-align:center; font-size:14px; border:1px solid #aec7e5; border-radius:5px 5px 0 0; border-bottom:none; position:absolute; top:-31px; left:20px; background:#fff;}
+.shouhuo_inf dl{ padding-bottom:20px; border-bottom: solid 1px #ddd;}
+.shouhuo_inf dt{ font-size:13px; font-weight:bold;}
+.dt_margin dt{ margin-top: 20px;}
+.shouhuo_inf dl.shouhuo_special{ border-bottom: none;}
+.shouhuo_special dt{ margin-top:22px;}
+.shouhuo_special dd{ float: left; width: 50%;}
+.shouhuo_inf dd{ line-height:30px;}
+.od_shufu{ text-align:right; font-size:14px;}
+.od_shufu span{ font-size:16px; font-weight:bold; color:#ff5401;}
+.button.receive{ margin-bottom: 10px; background-color: transparent;}
+.button.receive a:hover{ color: #fff;}
+.table { max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0; }
+.table { width: 100%; margin-bottom: 20px; }
+.table th, .table td { padding:10px; line-height: 20px; text-align: left; vertical-align:middle; border-top: 1px solid #dddddd; }
+.table td {padding: 15px 10px;}
+.table th { font-weight: bold; text-align:center; }
+.table thead th { vertical-align: bottom; }
+.table caption+thead tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td { border-top: 0; }
+.table tbody+tbody { border-top: 2px solid #dddddd; }
+.table .table { background-color: #ffffff; }
+.table_condensed th, .table_condensed td { padding: 4px 5px; }
+.table_bordered { border: 1px solid #dddddd; border-collapse: separate; *border-collapse:collapse;
+    border-left: 0; }
+.table_bordered th, .table_bordered td { border-left: 1px solid #dddddd; }
+.table_bordered caption+thead tr:first-child th, .table_bordered caption+tbody tr:first-child th, .table_bordered caption+tbody tr:first-child td, .table_bordered colgroup+thead tr:first-child th, .table_bordered colgroup+tbody tr:first-child th, .table_bordered colgroup+tbody tr:first-child td, .table_bordered thead:first-child tr:first-child th, .table_bordered tbody:first-child tr:first-child th, .table_bordered tbody:first-child tr:first-child td { border-top: 0; }
+.table_striped tbody>tr:nth-child(odd)>td, .table_striped tbody>tr:nth-child(odd)>th { background-color: #f9f9f9; }
+.table_hover tbody tr:hover>td, .table_hover tbody tr:hover>th { background-color: #f5f5f5; }
+table td[class*="span"], table th[class*="span"], .row_fluid table td[class*="span"], .row_fluid table th[class*="span"] { display: table-cell; float: none; margin-left: 0; }
+.table .order_item td{text-align:center;vertical-align: middle;height: 100%;}
+.tab_order_info .order_hd{color: #404040;background: #f1f1f1;}
+.tab_order_info .order_hd th{text-align:center;font-weight:normal;border:0;}
+.tab_order_info .order_hd .item{border-left:1px solid #ddd;}
+.tab_order_info .order_item td{text-align:center;vertical-align: middle;height: 100%;}
+.tab_order_info .order_item .sku span{display:block;}
+.order_item .item .pic_info{float: left;margin-right: 10px;}
+.order_item .item .txt_info{text-align: left;line-height: 18px;margin-left: 80px;}
+.order_item .pic_info .pic{overflow:hidden;width:67px;height:50px; }
+.order_item .pic_info .pic img{_width:67px;max-height:50px;}
+.order_item .txt_info .good_icons{ color:#999;}
+.order_cancel .order_op{ display: block; width: 188px; height: 48px; line-height: 48px; font-size: 16px; text-align: center; border-radius: 3px; margin-right: 5px; background: #ff9e13;}
+.order_cancel a{ color:#fff; }
+.order_cancel a:hover{ color: #fff;}
+
+.btn_box{  margin: 20px auto;}
+.btn{ width: 80px; height: 35px; margin: 0 6px; border: none; line-height: 35px;}
+.btn.address_cancel{ background-color: #acacac;}
+.select{ position: relative;}
+.btn{ display: block; width: 100px; height: 40px; font-size: 14px; color: #fff; text-align: center; line-height: 40px; background: #0285d3; cursor: pointer;}
+.btn:hover{ color: #fff; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7;}
+.btn:active{ filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5;}

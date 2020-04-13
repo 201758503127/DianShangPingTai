@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>配件商城</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/site/require.js" defer async="true" data-main="js/site/home_main"></script>
+</head>
+<body>
+	<!--头部导航开始-->
+	<header class="header_outbox">
+		<div class="header_inbox">
+			<div class="loginbox">
+	            <p> 欢迎访问机械配件商城</p>
+	            <a href="index.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 访问官网 ]</a>
+	            <span id="register_info">
+		            <a href="login.html" class="login">&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;</a>
+		            <img src="images/common/header_line.jpg">
+		            <a href="register.html" class="login">&nbsp;&nbsp;免费注册&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	            </span>
+	            <span id="login_info" style="display: none;">
+	            	<a href="#" id="headerUsername" class="login"></a>
+		            <img src="images/common/header_line.jpg">
+		            <a href="#" id="headerLogout" class="login">&nbsp;&nbsp;退出</a>
+	            </span>
+        	</div>
+	        <ul class="my_action fix">
+	            <li>
+	                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的关注</a>
+	            </li>
+	            <li>
+	                <img src="images/common//mix_car.png">
+	                <a href="cart.html">购物车<span id="cartQuantity">[0]</span></a>
+	            </li>
+	            <li>
+	                <a href="#">我的商城</a>
+	            </li>
+	        </ul>
+		</div>
+	</header>
+	<!--头部导航结束-->
+	<!--Logo和头部搜索开始-->
+	
+	<div class="action_search_box wrapper_box">
+	    <a class="logo" href="#"></a>
+	    <div class="inputbox">
+	        <input type="text" id="keyword" name="keyword"  placeholder="请输入您感兴趣的内容">
+	        <button class="searchbtn" id="searchBtn">搜&nbsp;索</button>
+	         <div class="hotword">热销：
+	            <a href="product_search.html?name=润滑油" target="_blank">&nbsp;&nbsp;&nbsp;闸板泵&nbsp;&nbsp;&nbsp;</a>
+	        </div>
+	    </div>
+	    <img class="telephonenumber" src="images/common/telephone_number.jpg">
+	</div>
+	
+	<!--Logo和头部搜索结束-->
+
+
+	<!--头部主导航开始-->
+	
+	<span id="head-main-nav">
+		<div id="mallNav">
+		    <div class="wrapper_box clearfix">
+		            <nav class="mall_nav_main nall_hid" id="NavJson">
+		                <ul>
+		                    <li><a href="#" target="_self" style="background-color: #41b6e7;color: white;">配件商城</a>
+		                    </li>
+		                    <li><a href="#" target="_self">金融服务</a></li>
+		                    <li><a href="#" target="_self">销售/服务网络</a></li>
+		                    <li><a href="#" target="_self">积分商城</a></li>
+		                </ul>
+		            </nav>
+		    </div>
+		</div>
+	</span>
+	<!--头部主导航结束-->
+
+	<!--主体内容开始-->
+	<div id="content">
+		<!--导航+轮播-->
+		<div class="wrapper_box">
+			<div class="top_screen clearfix">
+				<div class="mall_left">
+					<div class="category_container">
+						<h2 class="category_title">全部配件分类</h2>
+						<div class="menu">
+							<ul id="paramContainer">
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!--幻灯片 Start-->
+				
+				<div class="slide_box ts_main">
+					<div class="hd btn">
+				        	<ul>
+				        		<li>1</li>
+				        		<li>2</li>
+				        		<li>3</li>
+				        	</ul>
+				    </div>
+				    <div class="bd ts_slide">
+				    	<ul class="ts_slide_list" >
+				            <li>
+								<img  src="images/products/banner.png">
+				            </li>
+				             <li>
+								<img src="images/products/banner02.jpg">
+				            </li>
+				            <li>
+								<img src="images/products/banner02.jpg">
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+				<!--//幻灯片 End-->
+			</div>
+		</div>
+		<!--楼层内容-->
+		<div class="wrapper_box" style="margin-top:20px" >
+			<!--热销商品-->
+			<div class="lmf_t">
+        		<span class="hot">HOT</span>热销系列产品
+    		</div>
+    		<div class="lmf_main">
+		        <div class="prodea">
+                    <div class="b_box1">
+                        <ul id="hotContainer">
+                        	
+                        </ul>
+                    </div>
+		        </div>
+   			 </div>
+   			<!--热销商品结束-->
+   			<!--一楼开始-->
+   			<div id="floor-one">
+   				<div class="floor_nav_box clearfix">
+				    <div class="floor_number">&nbsp;F1</div>
+				    <h1>混凝土机械</h1>
+				    <a class="current_a" href="product_search.html?parentId=10023">查看更多 &gt;&gt;</a>
+				</div>
+				<div class="wrapper_box clearfix">
+					<a href="product_detail.html" class="floor_left_banner" target="_blank">
+						<img src="images/products/f1_left_big.jpg">
+					</a>
+				    <div id="floor_one_m">
+				    	
+				    </div>
+				</div>
+   			</div>
+   			<!--一楼结束-->
+   			<!--二楼开始-->
+   			<div id="floor-two">
+   				<div class="floor_nav_box">
+				    <div class="floor_number">&nbsp;F2</div>
+				    <h1>建筑起重机械</h1>
+				    <a class="current_a" href="product_search.html?parentId=10024">查看更多 &gt;&gt;</a>
+				</div>
+				<div class="wrapper_box clearfix" >
+					<a href="#" class="floor_left_banner">
+						<img src="images/products/f2_left_big.jpg">
+					</a>
+					<div id="floor_two_m">
+						
+					</div>
+					</div>
+   			</div>
+   			<!--二楼结束-->
+
+   			<!--三楼开始-->
+   			<div id="floor-three">
+   				<div class="floor_nav_box">
+				    <div class="floor_number">&nbsp;F3</div>
+				    <h1>路面机械</h1>
+				    <a class="current_a" href="product_search.html?parentId=10022">查看更多 &gt;&gt;</a>
+				</div>
+				<div class="wrapper_box clearfix">
+					<a href="#" class="floor_left_banner" >
+						<img src="images/products/f3_left_big.jpg">
+					</a>
+				    <div id="floor_three_m">
+				    	
+				    </div>
+				</div>
+   			</div>
+   			<!--三楼结束-->
+   			<!--四楼开始-->
+   			<div id="floor-four">
+   				<div class="floor_nav_box">
+				    <div class="floor_number">&nbsp;F4</div>
+				    <h1>土方机械</h1>
+				    <a class="current_a" href="product_search.html?parentId=10025">查看更多 &gt;&gt;</a>
+				</div>
+				<div class="wrapper_box clearfix">
+					<a href="#" class="floor_left_banner" target="_blank">
+						<img src="images/products/f4_left_big.jpg">
+					</a>
+					<div id="floor_four_m">	
+					</div>
+				</div>
+   			</div>
+   			<!--四楼结束-->
+		</div>
+	</div>
+	<!--主体内容结束-->
+
+
+	<!--产品服务开始-->
+	<div id="product_service" class="wrapper_box clearfix">
+        <ul>
+            <li class="item l">
+                <p class="item_icon icon1 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">真实货源</p>
+                    <p class="text_info">一手货源&nbsp;真实存在</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon2 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">品质保障</p>
+                    <p class="text_info">垂直专业&nbsp;优选厂商</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon3 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">服务保障</p>
+                    <p class="text_info">专业服务团队</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon4 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">交易透明</p>
+                    <p class="text_info">买卖双方面谈价格</p>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<!--产品服务结束-->
+	<!--底部开始-->
+	<div class="footerbox">
+        <div class="footer">
+	        <div class="content_box clearfix">
+	            <div class="footerinside">
+	                <h1>新手指南</h1>
+	                <a href="#" target="_blank">免费注册</a>
+	                <a href="#" target="_blank">个人资料及密码</a>
+	                <a href="#" target="_blank">商品关注</a>
+	                <a href="#" target="_blank">查询订单</a>
+	                <a href="#" target="_blank">购物流程</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>付款/退款</h1>
+	                <a href="#" target="_blank">在线支付</a>
+	                <a href="#" target="_blank">银行转账</a>
+	                <a href="#" target="_blank">发票办理</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>配送方式</h1>
+	                <a href="#" target="_blank">快递配送</a>
+	                <a href="#" target="_blank">零担物流</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>售后服务</h1>
+	                <a href="#" target="_blank">退货流程</a>
+	                <a href="#" target="_blank">退货政策</a>
+	            </div>
+	            <div id="currentfooterInside" class="footerinside">
+	                <h1>帮助中心</h1>
+	                <a href="#" target="_blank">常见热点问题</a>
+	                <a href="#" target="_blank">联系我们</a>
+	                <a href="#" target="_blank">投诉与建议</a>
+	            </div>
+	        </div>
+        </div>
+
+        <div class="copyright_bgcolor">
+	        <div class="copyright">Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X</div>
+        </div>
+    </div>
+	<!--底部结束-->
+</body>
+</html>
+
+<!--模板开始-->
+
+<!--类型模板-->
+<script id="param_tpl" type="text/x-handlebars-template">
+	{{#each this}}
+		<li class="iten" style="display: block; margin-top: 0px;">
+		    <h3 class="item_hd">
+		        <a href="#">{{name}}</a>
+		        <span class="left_nav_arrow"></span>
+		    </h3>				    
+		    <div class="sub_category" >
+		        <div class="sub_view">
+		            <div class="next_menu">
+		            	{{#each children}}
+		                <div class="next_menu_box">
+		                    <a href="product_search.html?parentId={{../id}}" class="menu01">
+		                        <strong>{{name}}</strong>&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+		                    </a>
+			                    <div class="menu02_box">
+			                    	{{#each children}}
+			                        <a href="product_search.html?parentId={{../../id}}&partsId={{id}}" class="menu02">{{name}}</a>
+			                       	{{/each}}
+			                    </div>
+		                </div>
+		                <div class="menu_greyline"></div>
+		                {{/each}}
+		            </div>
+		        </div>
+		    </div>
+		</li>
+	{{/each}}
+</script>
+
+<!--热销商品模板-->
+<script id="hot_tpl" type="text/x-handlebars-template">
+	{{#each this}}
+		<li >
+	        <p class="flow_ovnt flow_ovnt_name">
+	            <span class="prdcname">
+	                <a href="product_detail.html?pid={{id}}" target="_blank">{{name}}</a>
+	            </span>
+	        </p>
+	        <p class="flow_ovnt nopadding flow_ovnt_price">
+	            <span class="yuan"></span>
+	            <span class="price">￥{{price}}</span>
+	        </p>
+	        <p class="image">
+	            <a href="product_detail.html?pid={{id}}" target="_blank">
+	            	<img  src="{{iconUrl}}" >
+	            </a>
+	        </p>
+	        <img src="images/common/hot_icon.png" class="hot_icon" alt="">
+	    </li>
+    {{/each}}
+</script>
+
+<!--楼右部-->
+<script id="floor_odd_top" type="text/x-handlebars-template">
+{{#each this}}
+	<div class="floor_middle_box01">
+		<a href="product_detail.html?pid={{id}}" class="fore01 pr">
+		    <img src="{{iconUrl}}" alt="">
+			<div class="product_info_container">    
+				<div class="product_name">
+		            {{name}}
+		        </div>
+		        <div class="product_price">
+		             ￥{{price}}
+		        </div>
+		    </div>
+		</a>
+	</div>
+{{/each}}
+</script>

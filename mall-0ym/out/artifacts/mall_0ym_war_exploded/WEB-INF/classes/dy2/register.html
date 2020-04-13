@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/common_head.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script src="js/site/require.js" defer async="true" data-main="js/site/register_main"></script>
+</head>
+<body>
+
+	<!--Logo和头部搜索开始-->
+	<div class="action_search_box content_box">
+	    <a class="logo" href="index.html"></a> 
+	</div>
+	<!--Logo和头部搜索结束-->
+	<!--分割线-->
+	<hr style="height: 1px; border: none; border-top: 1px solid #DDD; margin: 25px 0 0px;">
+	
+	<!-- 中部开始 -->
+	<div class="login_box">
+		<!-- 注册内容 -->
+		<div class="login_box_left">
+			<form id="registerForm" action="#" method="post" novalidate="novalidate">
+		    	<h1>注册账号，玩转商城所有服务！</h1>
+		        <div class="login_input_box">
+		        	<div class="login_label">用户名：</div>
+		        	<input type="text" id="username" name="username" class="login_input" maxlength="25" placeholder="3-16位英文字母或数字">
+		            <div class="error_tip" id="usernameError">请输入用户名</div>
+		        </div>
+		        <div class="login_input_box">
+		        	<div class="login_label">密码：</div>
+		        	<input type="password" id="password" name="password" class="login_input" style="ime-mode:disabled;" maxlength="20" autocomplete="off">
+		            <div class="error_tip" id="userpasswordError">请输入密码</div>
+		        </div>
+		        <div class="login_input_box">
+		        	<div class="login_label">确认密码：</div>
+		        	<input type="password" id="rePassword" name="rePassword" class="login_input" style="ime-mode:disabled;" maxlength="20" autocomplete="off">
+		            <div class="error_tip" id="repasswordError">请输入确认密码</div>
+		        </div>
+		        <div class="login_input_box">
+		        	<div class="login_label">手机：</div>
+		        	<input type="text" id="phone" name="phone" class="login_input" maxlength="11">
+		            <div class="error_tip" id="phoneError">请输入手机</div>
+		        </div>
+		        <div class="login_input_box">
+		        	<div class="login_label">邮箱：</div>
+		        	<input type="text" id="email" name="email" class="login_input" >
+		            <div class="error_tip" id="emailError">请输入邮箱</div>
+		        </div>
+		        <div class="login_input_box">
+		        	<div class="login_label">密码提示问题：</div>
+		        	<input type="text" id="question" name="question" class="login_input" >
+		            <div class="error_tip" id="questionError">请输入密码提示问题</div>
+		        </div>
+		          <div class="login_input_box">
+		        	<div class="login_label">密码提示答案：</div>
+		        	<input type="text" id="answer" name="answer" class="login_input" >
+		            <div class="error_tip" id="answerError">请输入密码提示答案</div>
+		        </div>
+		        <div class="clear"></div>
+		         <div class="login_input_box protocol_tip" style="margin-top:5px;margin-bottom:0px;margin-left: 110px;">
+		    		<input type="checkbox" checked="checked" id="protocol" name="protocol" style="float: left;margin-top: 0px;height:30px;">
+		            <div style="float:left;margin-top: 0px;height:30px;line-height:30px;">我已经看过并同意《<a href="#l" target="_blank">网络服务协议</a>》</div>
+		            <div class="error_tip" style="margin-left:20px;"></div>
+		   		 </div>
+		         <input type="button" class="register_btn" style="width:170px;float:left;margin-left: 110px;" value="立即注册">
+		         <a href="password_back.html" style="float:left;line-height:60px;margin-left:20px;">已注册，找回密码</a>
+   		    </form>
+	    </div>	
+	</div>
+
+	<!--产品服务开始-->
+	<div id="product_service" class="content_box clearfix">
+        <ul>
+            <li class="item l">
+                <p class="item_icon icon1 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">真实货源</p>
+                    <p class="text_info">一手货源&nbsp;真实存在</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon2 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">品质保障</p>
+                    <p class="text_info">垂直专业&nbsp;优选厂商</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon3 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">服务保障</p>
+                    <p class="text_info">专业服务团队</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon4 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">交易透明</p>
+                    <p class="text_info">买卖双方面谈价格</p>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<!--产品服务结束-->
+	<!--底部开始-->
+	<div class="footerbox">
+        <div class="copyright_bgcolor">
+	        <div class="copyright">Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X</div>
+        </div>
+    </div>
+	<!--底部结束-->
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>配件搜索</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/common_head.css">
+	<link rel="stylesheet" type="text/css" href="css/product_search.css">
+	<script src="js/site/require.js" defer async="true" data-main="js/site/product_search_main"></script>
+	<style>
+		.selected{
+			background:#41b6e7;color:#fff !important;
+		}
+		.list-img{
+			width: 202px;
+			height: 202px;
+		}
+	</style>
+</head>
+<body>
+		<!--头部导航开始-->
+	<header class="header_outbox">
+		<div class="header_inbox">
+			<div class="loginbox">
+	            <p> 欢迎访问机械配件商城</p>
+	            <a href="index.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 访问官网 ]</a>
+	            <span id="register_info">
+		            <a href="login.html" class="login">&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;</a>
+		            <img src="images/common/header_line.jpg">
+		            <a href="register.html" class="login">&nbsp;&nbsp;免费注册&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	            </span>
+	            <span id="login_info" style="display: none;">
+	            	<a href="#" id="headerUsername" class="login"></a>
+		            <img src="images/common/header_line.jpg">
+		            <a href="#" id="headerLogout" class="login">&nbsp;&nbsp;退出</a>
+	            </span>
+        	</div>
+	        <ul class="my_action fix">
+	            <li>
+	                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的关注</a>
+	            </li>
+	            <li>
+	                <img src="images/common//mix_car.png">
+	                <a href="cart.html">购物车<span id="cartQuantity">[0]</span></a>
+	            </li>
+	            <li>
+	                <a href="#">我的商城</a>
+	            </li>
+	        </ul>
+		</div>
+	</header>
+	<!--头部导航结束-->
+	<!--Logo和头部搜索开始-->
+	
+	<div class="action_search_box content_box">
+	    <a class="logo" href="index.html"></a>
+	    <div class="inputbox">
+	        <input type="text" id="keyword" name="keyword"  placeholder="请输入您感兴趣的内容">
+	        <button class="searchbtn" id="searchBtn" >搜&nbsp;索</button>
+	        <div class="hotword">热销：
+	            <a href="product_search.html?name=润滑油" target="_blank">&nbsp;&nbsp;&nbsp;润滑油&nbsp;&nbsp;&nbsp;</a>
+	        </div>
+	    </div>
+	    <img class="telephonenumber" src="images/common/telephone_number.jpg">
+	</div>
+	<!--Logo和头部搜索结束-->
+	<!--分割线-->
+	<hr style="height: 1px; border: none; border-top: 1px solid #DDD; margin: 25px 0 0px;">
+
+	<div class="content_box pr">
+		<!--产品分类-->
+		<div class="list_content_box">
+		    <div class="list01">
+		        <div class="attkey">产品类型：</div>
+		        <div class="attvalues" >        	
+		            <ul id="productTypeContainer">
+
+		            </ul>
+		        </div>
+
+		    </div>
+		    <div class="list01 list01_2">
+		        <div class="attkey">配件类型：</div>
+		        <div class="attvalues">
+		           <ul id="partstpye1">
+		                <li class="currentli">
+		                    <a href="#" class="current_a">不限</a>
+		                </li>
+		            </ul>
+					<div id="parts_type_container">	
+						
+					</div>		
+		        </div>
+
+		    </div>
+		    
+		  </div>
+	</div>
+
+	<!--搜索结果列表-->
+	<div class="probox">
+		 <a class="product_list" href="product_detail.html" target="_blank" > 
+		 	<img >
+         	<h1>￥<strong>7750.00</strong></h1>
+         	<h2>混凝土缸Φ260</h2>
+    	 </a>
+    	
+	</div>
+	
+	<!--分页 start-->
+	<div class="page">
+		<a class="btn_prev" href="javascript:void(0)">上一页</a>
+		<span>
+			<a href="javascript:void(0)" class="page_num on"></a>
+		</span>
+		<a class="btn_next" href="javascript:void(0)">下一页</a>
+		<span class="page_count"></span>
+	</div>
+	<!--分页 end-->
+
+	<!--产品服务开始-->
+	<div id="product_service" class="content_box clearfix">
+        <ul>
+            <li class="item l">
+                <p class="item_icon icon1 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">真实货源</p>
+                    <p class="text_info">一手货源&nbsp;真实存在</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon2 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">品质保障</p>
+                    <p class="text_info">垂直专业&nbsp;优选厂商</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon3 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">服务保障</p>
+                    <p class="text_info">专业服务团队</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon4 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">交易透明</p>
+                    <p class="text_info">买卖双方面谈价格</p>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<!--产品服务结束-->
+	<!--底部开始-->
+	<div class="footerbox">
+        <div class="footer">
+	        <div class="content_box clearfix">
+	            <div class="footerinside">
+	                <h1>新手指南</h1>
+	                <a href="#" target="_blank">免费注册</a>
+	                <a href="#" target="_blank">个人资料及密码</a>
+	                <a href="#" target="_blank">商品关注</a>
+	                <a href="#" target="_blank">查询订单</a>
+	                <a href="#" target="_blank">购物流程</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>付款/退款</h1>
+	                <a href="#" target="_blank">在线支付</a>
+	                <a href="#" target="_blank">银行转账</a>
+	                <a href="#" target="_blank">发票办理</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>配送方式</h1>
+	                <a href="#" target="_blank">快递配送</a>
+	                <a href="#" target="_blank">零担物流</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>售后服务</h1>
+	                <a href="#" target="_blank">退货流程</a>
+	                <a href="#" target="_blank">退货政策</a>
+	            </div>
+	            <div id="currentfooterInside" class="footerinside">
+	                <h1>帮助中心</h1>
+	                <a href="#" target="_blank">常见热点问题</a>
+	                <a href="#" target="_blank">联系我们</a>
+	                <a href="#" target="_blank">投诉与建议</a>
+	            </div>
+	        </div>
+        </div>
+
+        <div class="copyright_bgcolor">
+	        <div class="copyright">Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X</div>
+        </div>
+    </div>
+	<!--底部结束-->
+</body>
+</html>
+
+
+<!--产品分类列表-->
+<script id="product_type_list_tpl" type="text/x-handlebars-template">
+	{{#each this}}
+	    <li><a href="javascript:void(0);" product-type-id='{{id}}'>{{name}}</a></li>
+    {{/each}}
+</script>
+
+<!--配件分类列表-->
+<script id="parts_type_list_tpl" type="text/x-handlebars-template">
+{{#each children}}
+	<div class="list02 ">
+		<div class="attkey02">{{name}}</div>
+		<div class="attvalues02">
+			<ul>
+				{{#each children}}
+				<li>
+					<a href="javascript:void(0);" product-type-id='{{../../id}}' parts-type-id='{{id}}'>{{name}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+	<div class="listline"></div>
+{{/each}}
+</script>
+
+<script id="products_list_tpl" type="text/x-handlebars-template">
+	{{#each this}}
+		<div class="v">
+		 	<a class="product_list" href="product_detail.html?pid={{id}}" target="_blank" > 
+		 		<img src="{{iconUrl}}" class="list_img">
+		 		<h1>￥<strong>{{price}}</strong></h1>
+		 		<h2>{{name}}</h2>
+		 	</a>
+		</div>
+	{{/each}}
+</script>
+

@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        购物车
+    </title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common_head.css" rel="stylesheet" type="text/css"/>
+    <link href="css/cart.css" rel="stylesheet" type="text/css"/>
+	<script src="js/site/require.js" defer async="true" data-main="js/site/cart_main"></script>
+</head>
+</html>
+<body>
+<!--头部导航开始-->
+<header class="header_outbox">
+    <div class="header_inbox">
+        <div class="loginbox">
+            <p>
+                欢迎访问机械配件商城
+            </p>
+            <a href="index.html" target="_blank">
+                [ 访问官网 ]
+            </a>
+                <span id="register_info">
+                    <a class="login" href="login.html">
+                        登录
+                    </a>
+                    <img src="images/common/header_line.jpg">
+                        <a class="login" href="register.html">
+                            免费注册
+                        </a>
+                    </img>
+                </span>
+                <span id="login_info" style="display: none;">
+                    <a class="login" href="#" id="headerUsername">
+                    </a>
+                    <img src="images/common/header_line.jpg">
+                        <a class="login" href="index.html" id="headerLogout">
+                            退出
+                        </a>
+                    </img>
+                </span>
+        </div>
+        <ul class="my_action fix">
+            <li>
+                <a href="#">
+                    我的关注
+                </a>
+            </li>
+            <li>
+                <img src="images/common//mix_car.png">
+                <a href="cart.html">
+                    购物车
+                            <span id="cartQuantity">
+                                [0]
+                            </span>
+                </a>
+                </img>
+            </li>
+            <li>
+                <a href="#">
+                    我的商城
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--头部导航结束-->
+<!--Logo和头部搜索开始-->
+<div class="action_search_box content_box">
+    <a class="logo" href="index.html"></a>
+    <div class="inputbox">
+        <input type="text" id="keyword" name="keyword" placeholder="请输入您感兴趣的内容">
+        <button class="searchbtn" id="searchBtn">搜&nbsp;索</button>
+        <div class="hotword">热销：
+            <a href="product_search.html?name=润滑油" target="_blank">&nbsp;&nbsp;&nbsp;润滑油&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+    <img class="telephone_number" src="images/common/telephone_number.jpg">
+    </img>
+</div>
+<!--Logo和头部搜索结束-->
+<!--分割线-->
+<hr style="height: 1px; border: none; border-top: 1px solid #DDD; margin: 25px 0px 25px 0px;">
+<div class="content_box clear_fix">
+    <!--我的左侧菜单开始-->
+    <div class="left_nav l">
+        <div class="person_info clearfix">
+            <div class="head_img">
+                <img alt="" src="images/common/level.png">
+                </img>
+            </div>
+            <div class="welcome_info">
+                hi，亲爱的 欢迎回来
+            </div>
+            <div class="level_score">
+                <div class="clearfix">
+                    <div class="l">
+                        会员等级：
+                    </div>
+                    <div class="level_value l">
+                        菜鸟
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="l">
+                        会员积分：
+                    </div>
+                    <div class="score_value l">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-deal">
+            <a href="javascript:void(0);">
+                <div class="row title">
+                    <div class="dashed">
+                        我的交易
+                    </div>
+                </div>
+            </a>
+            <a href="order_list.html">
+                <div class="item">我的订单</div>
+            </a>
+            <a href="cart.html">
+                <div class="item  active">我的购物车</div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的积分购物车
+                </div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的积分消费
+                </div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的关注
+                </div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的购买咨询
+                </div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的优惠券
+                </div>
+            </a>
+
+            <div class="item "><a href="address_management.html">收货地址管理</a></div>
+            </a>
+            <a href="#">
+                <div class="item ">
+                    我的推荐
+                </div>
+            </a>
+        </div>
+        <div id="my-account">
+            <a href="javascript:;">
+                <div class="title">
+                    <div class="dashed">
+                        我的账户
+                    </div>
+                </div>
+            </a>
+
+            <div class="item ">
+                <a href="information_modification.html">
+                    个人资料 </a>
+            </div>
+            <div class="item">
+                <a href="password_modification.html">
+                    修改密码
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--我的左侧菜单结束-->
+    <div class="shopcar_right_box l">
+        <div id="cart-empty" class="shopcar_right_box no_product_cart l" style="display:none">
+            <div class="empty_cart_container">
+                <img src="images/common/empty_cart.png" alt="">
+
+                <div class="empty_title">您的购物车是空的</div>
+                <a href="index.html" class="empty_target">去商城</a>
+            </div>
+        </div>
+        <div id="cart-container">
+            <h1>
+                商品信息
+            </h1>
+
+            <div class="shopcar_righ_top clearfix">
+                <div class="shopcar_infor00">
+                    <input type="checkbox" id="selectAll">全选
+                </div>
+                <div class="shopcar_infor01">
+                    商品名称
+                </div>
+                <div class="shopcar_infor02">
+                    单价（元）
+                </div>
+                <div class="shopcar_infor03">
+                    数量
+                </div>
+                <div class="shopcar_infor04">
+                    实付（元）
+                </div>
+                <div class="shopcar_infor05">
+                    操作
+                </div>
+            </div>
+
+            <div id="cart-item-container">
+
+            </div>
+
+            <!--总计结算-->
+            <div class="shop_car_buy">
+                <a class="shop_car_buy01 l" href="javascript:void(0)" id="clear">
+                    清空购物车
+                </a>
+                <a class="shop_car_buy02 r" href="javascript:void(0)" id="submit">
+                    提交订单
+                </a>
+
+                <div class="shop_car_buy03 r">
+                    <strong>
+	                            <span class="total_price" id="amount">
+	                                ￥8280.00
+	                            </span>
+                    </strong>
+                </div>
+                <div class="shop_car_buy04 r">
+                    商品金额：
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品服务开始-->
+<div class="content_box clearfix" id="product_service">
+    <ul>
+        <li class="item l">
+            <p class="item_icon icon1 l">
+            </p>
+
+            <div class="item_text l">
+                <p class="text_tit">
+                    真实货源
+                </p>
+
+                <p class="text_info">
+                    一手货源 真实存在
+                </p>
+            </div>
+        </li>
+        <li class="item l">
+            <p class="item_icon icon2 l">
+            </p>
+
+            <div class="item_text l">
+                <p class="text_tit">
+                    品质保障
+                </p>
+
+                <p class="text_info">
+                    垂直专业 优选厂商
+                </p>
+            </div>
+        </li>
+        <li class="item l">
+            <p class="item_icon icon3 l">
+            </p>
+
+            <div class="item_text l">
+                <p class="text_tit">
+                    服务保障
+                </p>
+
+                <p class="text_info">
+                    专业服务团队
+                </p>
+            </div>
+        </li>
+        <li class="item l">
+            <p class="item_icon icon4 l">
+            </p>
+
+            <div class="item_text l">
+                <p class="text_tit">
+                    交易透明
+                </p>
+
+                <p class="text_info">
+                    买卖双方面谈价格
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--产品服务结束-->
+<!--底部开始-->
+<div class="footerbox">
+    <div class="footer">
+        <div class="content_box clearfix">
+            <div class="footerinside">
+                <h1>
+                    新手指南
+                </h1>
+                <a href="#" target="_blank">
+                    免费注册
+                </a>
+                <a href="#" target="_blank">
+                    个人资料及密码
+                </a>
+                <a href="#" target="_blank">
+                    商品关注
+                </a>
+                <a href="#" target="_blank">
+                    查询订单
+                </a>
+                <a href="#" target="_blank">
+                    购物流程
+                </a>
+            </div>
+            <div class="footerinside">
+                <h1>
+                    付款/退款
+                </h1>
+                <a href="#" target="_blank">
+                    在线支付
+                </a>
+                <a href="#" target="_blank">
+                    银行转账
+                </a>
+                <a href="#" target="_blank">
+                    发票办理
+                </a>
+            </div>
+            <div class="footerinside">
+                <h1>
+                    配送方式
+                </h1>
+                <a href="#" target="_blank">
+                    快递配送
+                </a>
+                <a href="#" target="_blank">
+                    零担物流
+                </a>
+            </div>
+            <div class="footerinside">
+                <h1>
+                    售后服务
+                </h1>
+                <a href="#" target="_blank">
+                    退货流程
+                </a>
+                <a href="#" target="_blank">
+                    退货政策
+                </a>
+            </div>
+            <div class="footerinside" id="currentfooterInside">
+                <h1>
+                    帮助中心
+                </h1>
+                <a href="#" target="_blank">
+                    常见热点问题
+                </a>
+                <a href="#" target="_blank">
+                    联系我们
+                </a>
+                <a href="#" target="_blank">
+                    投诉与建议
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-bgcolor">
+        <div class="copyright">
+            Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+</hr>
+</body>
+
+<!--购物中商品的模板-->
+<script id="cart-item-tpl" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="shop_car_probox">
+        <div class="pro00">
+            <input type="checkbox" class="all_checkbox" data-product-id={{productId}}>
+        </div>
+        <div class="pro01">
+            <input name="id" type="hidden" value="9206">
+            <a href="product_detail.html?pid={{goodsId}}" target="_blank">
+                {{name}}
+            </a>
+            </input>
+        </div>
+        <div class="pro02">
+            ￥{{price}}
+        </div>
+        <div class="pro03">
+            <div class="product_select_num_value clearfix">
+                <a class="minus_btn  l" href="javascript:void(0);" data-product-id={{productId}}></a>
+                <input autocomplete="off" class="l" id="quantity{{productId}}" data-stock={{stock}} maxlength="4"
+                       minquantity="1" name="quantity" type="text" value="{{quantity}}"></input>
+                <a class="plus_btn l " href="javascript:void(0);" data-product-id={{productId}}></a>
+            </div>
+        </div>
+        <div class="pro04">
+            <span class="single_total">
+                ￥{{totalPrice}}
+            </span>
+        </div>
+        <div class="pro05">
+            <a class="delete" data-product-id={{productId}} href="javascript:void(0);">
+                删除
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</script>

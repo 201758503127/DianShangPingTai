@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.right_nav,.integral_detail .detail_tit{ width: 900px; height: 32px; margin-bottom: 30px; border-bottom: solid 2px #e8e8e8;}
+.right_nav .nav_item,.integral_detail .detail_tit .tit_item{ display: block; padding: 0 25px; border-bottom: solid 2px transparent; font-size: 16px; color: #66656a; text-align: center; line-height: 32px; cursor: pointer;}
+.right_nav .nav_item.on:after, .right_nav .nav_item:hover:after,.integral_detail .detail_tit .tit_item.on:after,.form_box .tab_tit li.on:after,.goods_nav .nav_item:hover:after,.goods_nav .nav_item.on:after,.appraiser_nav a:hover:after,.appraiser_nav a.on:after{ content: ""; position: absolute; bottom: 0; left: 50%; width: 0; height: 0; margin-left: -3px; border-left: solid 4px transparent; border-right: solid 4px transparent; border-bottom: solid 6px #0285d3;}
+.right_nav .nav_item.on, .right_nav .nav_item:hover,.integral_detail .detail_tit .tit_item.on{ color: #0285d3; border-color: #0285d3;}
+.right_nav .bread_nav{ font-size: 12px; color: #666; line-height: 32px;}
+
+
+
+
+.user_order .item_01{ width: 238px;}
+.user_order .item_02{ width: 100px;}
+.user_order .item_03{ width: 108px;}
+.user_order .item_04{ width: 106px;}
+.user_order .item_05{ width: 170px;}
+.user_order .item_06{ width: 106px;}
+.order_tit{ height: 46px; margin-bottom: 25px; border: solid 1px #ddd; color: #4f4f4f; text-align: center; line-height: 46px; background-color: #f5f5f5;}
+
+
+.order_list{}
+.order_list_content{ border-bottom: solid 1px #ddd; }
+.order_list .list_item{ margin-bottom: 30px; border: solid 1px #ddd; border-bottom: none;}
+.order_detail_6{position: absolute;margin-top: 78px;margin-left: 785px;}
+
+
+.order_mess{ border-bottom: solid 1px #ddd; line-height: 40px; background-color: #f1faff;}
+.order_mess .order_number .order_mess .order_date{ margin: 0 10px; color: #666;}
+.order_date{margin: 0 10px;}
+.order_mess .order_detail{background-color: #41b5e7;color: #fff;box-sizing: border-box;display: inline-block;border: none;height: 28px;
+line-height: 26px;padding: 0 12px;border-radius: 3px;font-size: 12px;cursor: pointer;}
+.order_mess .order_del{ margin-right: 16px; color: #118cd6;}
+
+.order_list_content { height: 100px;text-align: center;line-height: 100px;}
+.order_list_content  .center_item{ display: inline-block; width: auto; height: auto; max-width: 100%; max-height: 100%; vertical-align: middle;}
+.order_list_content .goods_info{ height: 76px; text-align: left;margin-left: 30px}
+.order_list_content .goods_img{ width: 100px; height: 75px; margin-right: 8px; text-align: center; line-height: 75px;}
+.order_list_content .goods_img img{ display: inline-block; width: auto; height: auto; max-width: 100%; max-height: 100%; vertical-align: middle;}
+.order_list_content .goods_name{ font-size: 12px; color: #333;}
+.order_list_content .type_info{ width: 148px; max-height: 32px; font-size: 12px; line-height: 16px; color: #a1a1a1;}
+.order_list_content .goods_price,.order_list_content .goods_num{ color: #666;}
+.order_list .order_amount { color: #f00; font-weight: bold;width: 150px;}
+.empty_order{margin-left: 360px;margin-top: 120px;display:none;}
+.pay_btn{background-color: #41b5e7;color: #fff;box-sizing: border-box;display: inline-block;border: none;
+height: 28px;line-height: 26px;padding: 0 12px;border-radius: 3px;font-size: 12px;cursor: pointer;}
+
+/*分页*/
+.page{ height: 32px; margin-top: 30px; margin-bottom: 50px; font-size: 14px; color: #898989; line-height: 32px; text-align: center;}
+.page a,.page input{ display: inline-block; }
+.page .btn_prev,.page .btn_next{ width: 88px; height: 30px; margin-left: 4px; border: solid 1px #e5e5e5; }
+.page .btn_prev i.ds_editor,.page .btn_next i.ds_editor{ display: inline-block; margin: 0 3px; font-size: 14px;}
+.page .btn_next i.ds_editor{ transform:rotate(180deg); -ms-transform:rotate(180deg); -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg); -o-transform:rotate(180deg); }
+.page .page_num{ width: 30px; height: 30px; margin-left: 4px; border: solid 1px #e5e5e5;}
+.page a:hover,.page .page_num.on,.page .jump_btn:hover{ color: #fff; background: #0087ce;}
+.page .page_count{ margin-left: 8px; margin-right: 36px;}
+.page .num_ipt{ width: 36px; height: 32px; margin: 0 8px; border: solid 1px #e5e5e5; text-align: center;}
+.page .jump_btn{ width: 58px; height: 32px; margin-left: 6px; border: solid 1px #e5e5e5; color: #545454; background: #fff;}
+.page .ellipsis{ margin: 0 10px;}
+

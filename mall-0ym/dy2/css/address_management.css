@@ -1,0 +1,40 @@
+.right_title{font-size: 23px;font-weight: bold;color: #333333;padding-left: 200px;}
+.management_item{float:left;margin-right: 10px;}
+.management_box{margin-top:20px;margin-left:300px;}
+.management_input{width: 470px;
+    height: 34px;
+    line-height: 40px;
+    margin-right: 20px;
+    padding-left: 10px;}
+.management_btn{width: 80px;
+    height: 30px;
+    margin-left: 198px;
+    margin-top: 30px;
+    background-color: #41b5e7;
+    color: #fff;
+    font-size: 14px;}
+.next_table_cell{
+    font-size: 12px;
+    padding: 6px;
+    background: #ebecf0;
+    color: #333;
+    font-weight: 400;
+    text-align:center;
+    border: 1px solid #dcdee3;}
+.next_table_cell1{     font-size: 12px;
+    height: 60px;
+    color: #333;
+    font-weight: 400;
+    border: 1px solid #dcdee3;
+    padding: 5px 15px;}
+.t_default{    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ff5000;
+    border-radius: 3px;
+    background: #ffd6cc;
+    color: #f30;}
+.new_address{}
+.updata_address{display:none;}

@@ -1,0 +1,989 @@
+{
+  "hists" : [ {
+    "key" : "d42bc64e-4d9b-464d-9b48-950a88b341dc",
+    "descr" : "-",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "GET",
+      "body" : "",
+      "date" : "2019-03-25 16:13:55.048",
+      "headers" : {
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:14:02 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:13:56.017",
+      "time" : 6207,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nGET http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nContent-Type : application/json; charset=UTF-8\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:14:02 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}\r\n"
+    }
+  }, {
+    "key" : "7937396a-b77b-49d1-92af-a99fe054722f",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "GET",
+      "body" : "",
+      "date" : "2019-03-25 16:19:15.761",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":2,\"msg\":\"请登录后在进行操作！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:19:15 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:19:15.763",
+      "time" : 15,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nGET http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:19:15 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":2,\"msg\":\"请登录后在进行操作！\"}\r\n"
+    }
+  }, {
+    "key" : "73865031-c099-4274-bc59-ab27192bddda",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\n \"account\":admin01,\n \"password\":1234\n}",
+      "date" : "2019-03-25 16:47:26.193",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:47:26 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:47:26.210",
+      "time" : 36,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n--   BODY   --\r\n{\n \"account\":admin01,\n \"password\":1234\n}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:47:26 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "31c16ab9-14c8-4723-9dfb-c1a3a2baa7bf",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}",
+      "date" : "2019-03-25 16:47:48.176",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:47:48 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:47:48.178",
+      "time" : 12,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n--   BODY   --\r\n{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:47:48 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "fb77d32a-ca8c-4ddb-b572-b182b3c40815",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}",
+      "date" : "2019-03-25 16:48:50.625",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:50:10 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:48:50.627",
+      "time" : 79635,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n--   BODY   --\r\n{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:50:10 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "afc2cc30-9e71-4b50-b497-e59a07aed967",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "[{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}]",
+      "date" : "2019-03-25 16:51:31.426",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Set-Cookie" : "JSESSIONID=F7932B2D220B0792536FC52C45358F25; Path=/actionmall; HttpOnly",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:51:41 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:51:31.428",
+      "time" : 9806,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\n[{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}]\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nSet-Cookie : JSESSIONID=F7932B2D220B0792536FC52C45358F25; Path=/actionmall; HttpOnly\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:51:41 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "346b5ec0-af0f-4f22-9f88-73453ea8c87c",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}",
+      "date" : "2019-03-25 16:53:04.617",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 08:53:16 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 16:53:04.620",
+      "time" : 11850,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\n{\n \"account\":\"admin01\",\n \"password\":\"1234\"\n}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 08:53:16 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "3f6c1144-e1ad-4645-84d7-3c6fecd4f20a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\"account\":\"admin01\",\"password\":\"1234\"}",
+      "date" : "2019-03-25 17:03:38.993",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:03:55 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:03:38.994",
+      "time" : 16610,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n--   BODY   --\r\n{\"account\":\"admin01\",\"password\":\"1234\"}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:03:55 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "37ac260a-273e-4700-b964-12a50ced9d26",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduser.do",
+      "method" : "POST",
+      "body" : "{\"id\":5}",
+      "date" : "2019-03-25 17:04:54.897",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"获取用户数据失败\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:06:50 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:04:54.898",
+      "time" : 115643,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/finduser.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n--   BODY   --\r\n{\"id\":5}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:06:50 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"获取用户数据失败\"}\r\n"
+    }
+  }, {
+    "key" : "12fb9e0f-d6a7-47a3-83a3-e12a33b41c42",
+    "descr" : "-",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : [ ],
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "POST",
+      "body" : "",
+      "date" : "2019-03-25 17:07:14.026",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8",
+        "Cookie" : "JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      },
+      "cookies" : {
+        "JSESSIONID" : "CBA757A4D999AB6E3BCF7CEAB72B4C9F"
+      }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:07:14 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:07:14.028",
+      "time" : 25,
+      "status" : "HTTP/1.1 200",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\nCookie : JSESSIONID=CBA757A4D999AB6E3BCF7CEAB72B4C9F\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:07:14 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}\r\n"
+    }
+  }, {
+    "key" : "ae2da2e8-15fb-4971-a7b7-e06a0a4acd9a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "{\n \"account\":admin01,\n \"password\":1234\n}",
+      "date" : "2019-03-25 17:34:19.259",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":1,\"msg\":\"用户不存在！\"}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Set-Cookie" : "JSESSIONID=28A66FA0AF9032E7668EBF4010015E3F; Path=/actionmall; HttpOnly",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:34:34 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:34:19.262",
+      "time" : 15289,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\n{\n \"account\":admin01,\n \"password\":1234\n}\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nSet-Cookie : JSESSIONID=28A66FA0AF9032E7668EBF4010015E3F; Path=/actionmall; HttpOnly\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:34:34 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":1,\"msg\":\"用户不存在！\"}\r\n"
+    }
+  }, {
+    "key" : "a29b98e8-0aff-4b97-9bac-c3c62f2a5715",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "POST",
+      "body" : "",
+      "date" : "2019-03-25 17:39:10.218",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:39:10 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:39:10.220",
+      "time" : 85,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:39:10 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}\r\n"
+    }
+  }, {
+    "key" : "594e4161-29de-42c8-a9fa-ba50acf9259d",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "POST",
+      "body" : "",
+      "date" : "2019-03-25 17:39:18.810",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:39:18 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:39:18.812",
+      "time" : 25,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:39:18 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}\r\n"
+    }
+  }, {
+    "key" : "f1f4f156-bd05-4b30-a30a-af97cd608e88",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-25 17:40:46.602",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"msg\":\"登陆成功\",\"data\":{\"id\":2,\"account\":\"admin01\",\"password\":\"\",\"email\":\"action@action.cn\",\"age\":0,\"sex\":0,\"del\":0,\"phone\":\"123456789\",\"question\":\"这是什么问题？\",\"asw\":\"不知道\",\"role\":2,\"create_time\":1517930634000,\"update_time\":1518100629000,\"name\":\"\"}}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:41:05 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:40:46.604",
+      "time" : 18977,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:41:05 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"msg\":\"登陆成功\",\"data\":{\"id\":2,\"account\":\"admin01\",\"password\":\"\",\"email\":\"action@action.cn\",\"age\":0,\"sex\":0,\"del\":0,\"phone\":\"123456789\",\"question\":\"这是什么问题？\",\"asw\":\"不知道\",\"role\":2,\"create_time\":1517930634000,\"update_time\":1518100629000,\"name\":\"\"}}\r\n"
+    }
+  }, {
+    "key" : "51e1e308-4270-4a05-bf22-8f3212c0685c",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/finduserlist.do",
+      "method" : "POST",
+      "body" : "",
+      "date" : "2019-03-25 17:42:59.227",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:42:59 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:42:59.229",
+      "time" : 43,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/finduserlist.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:42:59 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0,\"data\":[{\"id\":1,\"account\":\"admin\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"1\",\"email\":\"1\"},{\"id\":2,\"account\":\"admin01\",\"name\":\"\",\"sex\":\"女\",\"age\":0,\"phone\":\"123456789\",\"email\":\"action@action.cn\"},{\"id\":3,\"account\":\"action01\",\"name\":null,\"sex\":\"女\",\"age\":23,\"phone\":\"1556688999\",\"email\":\"action01@action.cn\"},{\"id\":4,\"account\":\"action02\",\"name\":\"沈辉\",\"sex\":\"女\",\"age\":20,\"phone\":\"123456789\",\"email\":\"action02@action.cn\"},{\"id\":5,\"account\":\"zhangsan\",\"name\":\"张三\",\"sex\":\"男\",\"age\":35,\"phone\":\"13356896698\",\"email\":\"zhangsan@sohu.com\"},{\"id\":6,\"account\":\"lisi\",\"name\":null,\"sex\":\"男\",\"age\":20,\"phone\":\"12222222222\",\"email\":\"lisi@163.com\"}]}\r\n"
+    }
+  }, {
+    "key" : "cd09af89-4176-462e-96d0-7b296dc2639a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/isAdmin.do",
+      "method" : "POST",
+      "body" : "",
+      "date" : "2019-03-25 17:43:33.475",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "{\"status\":0}",
+      "headers" : {
+        "Transfer-Encoding" : "chunked",
+        "Access-Control-Allow-Methods" : "POST, GET, OPTIONS, DELETE",
+        "Access-Control-Allow-Credentials" : "true",
+        "Access-Control-Max-Age" : "0",
+        "Access-Control-Allow-Headers" : "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+        "Date" : "Mon, 25 Mar 2019 09:43:33 GMT",
+        "XDomainRequestAllowed" : "1",
+        "Content-Type" : "application/json;charset=UTF-8"
+      },
+      "date" : "2019-03-25 17:43:33.477",
+      "time" : 19,
+      "status" : "HTTP/1.1 200 ",
+      "statusCode" : 200,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/isAdmin.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 200 \r\n\r\n-- HEADERS  --\r\nTransfer-Encoding : chunked\r\nAccess-Control-Allow-Methods : POST, GET, OPTIONS, DELETE\r\nAccess-Control-Allow-Credentials : true\r\nAccess-Control-Max-Age : 0\r\nAccess-Control-Allow-Headers : Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token\r\nDate : Mon, 25 Mar 2019 09:43:33 GMT\r\nXDomainRequestAllowed : 1\r\nContent-Type : application/json;charset=UTF-8\r\n\r\n--   BODY   --\r\n{\"status\":0}\r\n"
+    }
+  }, {
+    "key" : "80ef4af5-7262-45d6-bfaa-7253d920ac32",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:53:54.031",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:53:54 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:53:54.033",
+      "time" : 60,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:53:54 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "f2be57c4-6e24-4816-bffd-76cf61b43b65",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:54:33.347",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:54:33 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:54:33.350",
+      "time" : 19,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:54:33 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "3995ace6-7b0d-4505-8172-8760f1cd4ea1",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:55:21.076",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:55:21 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:55:21.079",
+      "time" : 19,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:55:21 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "acb0634d-a3e9-4a9e-9d4a-fc247c1463c0",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:55:40.827",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1114",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:55:40 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:55:40.828",
+      "time" : 10,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1114\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:55:40 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "727b4a07-2030-432e-84b0-92fa42504035",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:56:15.075",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:56:15 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:56:15.077",
+      "time" : 19,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:56:15 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "d5f6a42c-8e81-4013-9916-48bfda07924b",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:57:37.651",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:57:37 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:57:37.653",
+      "time" : 19,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:57:37 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "bff2870d-a7a1-4882-a6f9-37a94264b45a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user/login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:58:01.594",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1117",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:58:01 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:58:01.597",
+      "time" : 17,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user/login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1117\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:58:01 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "bb65cfd7-9350-490d-af6b-b84d0cfad862",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user//login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 09:59:53.474",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/json; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1122",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 01:59:53 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 09:59:53.477",
+      "time" : 20,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user//login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/json; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1122\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 01:59:53 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "cb8917d2-e359-46e6-a5ea-6ed2fbfb9d48",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall_ex/mgr/user//login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 10:00:14.251",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1122",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 02:00:14 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 10:00:14.254",
+      "time" : 14,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall_ex/mgr/user//login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1122\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 02:00:14 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall_ex&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "96299526-7e7b-4fc6-9fac-e622d9aa423a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user//login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-03-26 10:06:34.721",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1119",
+        "Content-Language" : "en",
+        "Date" : "Tue, 26 Mar 2019 02:06:34 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-03-26 10:06:34.722",
+      "time" : 17,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user//login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1119\r\nContent-Language : en\r\nDate : Tue, 26 Mar 2019 02:06:34 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> &#47;actionmall&#47;mgr&#47;user&#47;&#47;login.do</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.31</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "04616d4c-fe17-4211-8253-b304b1787b88",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user//login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-06-27 15:11:47.184",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.42</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1078",
+        "Content-Language" : "en",
+        "Date" : "Thu, 27 Jun 2019 07:11:48 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-06-27 15:11:48.122",
+      "time" : 86,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user//login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1078\r\nContent-Language : en\r\nDate : Thu, 27 Jun 2019 07:11:48 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.42</h3></body></html>\r\n"
+    }
+  }, {
+    "key" : "da5405fc-7bd2-499c-ae85-3ef49ea6377a",
+    "descr" : "",
+    "assertBdy" : true,
+    "result" : null,
+    "cause" : null,
+    "excludedNodes" : null,
+    "request" : {
+      "url" : "http://localhost:8080/actionmall/mgr/user//login.do",
+      "method" : "POST",
+      "body" : "account=admin01&password=1234",
+      "date" : "2019-06-27 15:13:39.542",
+      "headers" : {
+        "Accept" : "application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain",
+        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "cookies" : { }
+    },
+    "response" : {
+      "body" : "<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.42</h3></body></html>",
+      "headers" : {
+        "Content-Length" : "1078",
+        "Content-Language" : "en",
+        "Date" : "Thu, 27 Jun 2019 07:13:39 GMT",
+        "Content-Type" : "text/html;charset=utf-8"
+      },
+      "date" : "2019-06-27 15:13:39.543",
+      "time" : 6,
+      "status" : "HTTP/1.1 404 ",
+      "statusCode" : 404,
+      "raw_text" : "== REQUEST  ==\r\n\r\nPOST http://localhost:8080/actionmall/mgr/user//login.do\r\n\r\n-- HEADERS  --\r\nAccept : application/json,application/xml,application/xhtml+xml,text/html,text/xml,text/plain\r\nContent-Type : application/x-www-form-urlencoded; charset=UTF-8\r\n\r\n--   BODY   --\r\naccount=admin01&password=1234\r\n\r\n== RESPONSE ==\r\n\r\nHTTP/1.1 404 \r\n\r\n-- HEADERS  --\r\nContent-Length : 1078\r\nContent-Language : en\r\nDate : Thu, 27 Jun 2019 07:13:39 GMT\r\nContent-Type : text/html;charset=utf-8\r\n\r\n--   BODY   --\r\n<!doctype html><html lang=\"en\"><head><title>HTTP Status 404 – Not Found</title><style type=\"text/css\">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class=\"line\" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class=\"line\" /><h3>Apache Tomcat/8.5.42</h3></body></html>\r\n"
+    }
+  } ]
+}

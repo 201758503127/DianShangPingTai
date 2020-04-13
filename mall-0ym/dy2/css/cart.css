@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/**左侧栏*开始*/
+.searchbtn{ color: #000000;}
+.left_nav{width: 180px;background:#f6f6f6;height: auto; padding-bottom: 25px;}
+.left_nav .title{color:#1a1a1a;font-size:16px;line-height: 50px;height: 50px;border-left:4px solid #41b6e7 ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.left_nav .title .dashed{
+    font-size:16px;
+    border-top:1px dashed #BFBFBF;
+    border-bottom:1px dashed #BFBFBF;
+    padding-left: 15px;
+    height: 48px;
+}
+.left_nav .item{
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 37px;
+    height: 37px;
+    padding-left: 35px;
+}
+.left_nav .item:hover{color: #41b6e7;}
+.left_nav .active{color:#41b6e7;}
+
+/*个人信息*/
+.person_info{font-size: 12px;margin-top: 20px;margin-bottom: 30px;width: 140px;overflow: hidden;margin-left: auto;margin-right: auto;}
+.person_info .head_img{width: 100px;height: 100px;margin-left: auto;margin-right: auto;}
+.person_info .head_img img{width: 100%;height: 100%;}
+.welcome_info{margin: 10px auto;width: 122px;color:#888888;text-align: center;margin-left: auto; margin-right: auto;}
+.level_score{margin: 0 auto;width: 122px;}
+.level_value,.score_value{color:#41b6e7;margin-left: 5px;}
+
+/*左侧栏结束*/
+
+
+/*右侧购物车商品*/
+.shopcar_right_box{margin-left:15px; width:902px}
+.shopcar_right_box h1{ font-size:16px; padding:0; margin:0; line-height:46px; color:#1a1a1a}
+
+/*商品列表标题*/
+.shopcar_righ_top{ height:34px;background-color:#f3f3f3; overflow:hidden; border:1px solid #e0e0e0; border-top:3px solid #41b6e7; color:#666666}
+.shopcar_infor00{ float:left; width:50px; line-height:30px; text-align:center}
+.shopcar_infor01{ float:left; width:226px; line-height:30px; text-align:center}
+.shopcar_infor02{ float:left; width:130px; line-height:30px; text-align:center}
+.shopcar_infor03{ float:left; width:208px; line-height:30px; text-align:center}
+.shopcar_infor04{ float:left; width:142px; line-height:30px; text-align:center}
+.shopcar_infor05{ float:left; width:100px; line-height:30px; text-align:center}
+
+/*商品列表内容*/
+.shop_car_probox{ width:902px; height:78px; display:block;border:1px solid #e0e0e0; margin:10px 0}
+.shop_car_probox .pro00{ float:left;line-height:78px; width:30px; text-align:center;}
+.shop_car_probox .pro01{ float:left;line-height:78px; width:226px; text-align:center;}
+.shop_car_probox .pro02{ float:left;line-height:78px; width:149px; text-align:center;border-left:1px solid #e0e0e0}
+.shop_car_probox .pro03{ float:left;height:78px; width:209px; text-align:center;border-left:1px solid #e0e0e0}
+.shop_car_probox .pro04{ float:left;line-height:78px; width:125px; text-align:center;border-left:1px solid #e0e0e0}
+.shop_car_probox .pro05{ float:left;line-height:78px; width:127px; text-align:center;border-left:1px solid #e0e0e0}
+.shop_car_probox .pro06 a{ color:#86a529}
+/*商品数量*/
+.product_select_num_value{
+    margin: 25px 50px;
+}
+.product_select_num_value input {
+    display: block;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    border-left: 0;
+    border-right: 0;
+    border-top: solid 1px #d0d0d0;
+    border-bottom: solid 1px #d0d0d0;
+    outline: none;
+    text-align: center;
+}
+
+.product_select_num_value a {height: 30px;width: 28px;}
+.minus_btn{background: url(../images/common/minus_btn.png) no-repeat;}
+.no_minus_btn{background: url(../images/common/no-minus_btn.png) no-repeat;}
+.plus_btn{background: url(../images/common/plus_btn.png) no-repeat;}
+
+
+
+
+
+/*结算*/
+.shop_car_buy{ height:54px; width:902px; background-color:#f3f3f3; margin-top:33px; margin-bottom:50px; overflow:hidden}
+
+.shop_car_buy01{ font-size:12px; line-height:54px;color:#666666; display:block; margin-left:43px}
+.shop_car_buy02{ background-color:#f76707; width:127px; display:block; text-align:center; color:#fff; line-height:54px; font-size:16px; font-weight:bold;}
+.shop_car_buy03{ font-size:12px; line-height:54px;color:#666666; margin-right:30px}
+.shop_car_buy03 strong,.shop_car_buy04 strong span{ font-size:26px; color:#f76707; }
+.shop_car_buy04{ font-size:12px; line-height:54px;color:#666666;}
+
+
+.empty_cart_container{
+    margin-left: 410px;
+    margin-top: 150px;
+}
+.empty_cart_container .empty_title{
+    color:#B8B8B8;
+    font-size: 18px;
+    line-height: 39px;
+}
+.empty_cart_container .empty_target{
+    text-align: center;
+    width: 142px;
+    display: block;
+    color: #41b6e7;
+    font-size: 19px;
+}

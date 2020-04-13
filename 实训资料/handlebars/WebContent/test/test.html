@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<div id="test"></div>
+</body>
+</html>
+<script id="param_item_tpl" type="text/x-handlebars-template">
+	<div>{{status}}</div>
+
+	{{#each this}}
+		{{#each lists}}
+			<p>{{name}}</p>
+			<p>{{price}}</p>
+		{{/each}}
+	{{/each}}
+
+	{{#content}}
+		<li>{{math}}</li>
+	{{/content}}
+
+	if判断只能判断true或者false   undefined null [] 0 识别为false
+	{{#if isTrue}} <p>istrue</p>   {{/if}}
+	{{#if email}}  <p>email</p>  {{else}} <p>is not email</p>  {{/if}}
+	{{#if num}} <p>num</p>{{/if}}
+	{{#if data1}} {{else}}<p>没有这个字段</p>{{/if}}
+	{{#with author}}
+		有author就显示里面内容，没有就不显示
+	{{/with}}
+
+	
+	{{!单行注释 你看不见我}}
+	{{!-- 多行注释 你也看不见我 --}}
+
+	<h1>{{author.id}}</h1>
+	
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/handlebars-v4.0.11.js"></script>
+<script type="text/javascript" src="js/test.js"></script>

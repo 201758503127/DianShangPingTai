@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>订单列表</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/common_head.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/order_list.css">
+	<link rel="stylesheet" type="text/css" href="css/order_detail.css">
+	<script src="js/site/require.js" defer async="true" data-main="js/site/order_list_main"></script>
+</head>
+<body>
+		<!--头部导航开始-->
+		<header class="header_outbox">
+			<div class="header_inbox">
+				<div class="loginbox">
+		            <p> 欢迎访问机械配件商城</p>
+		            <a href="index.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 访问官网 ]</a>
+		            <span id="register_info">
+			            <a href="login.html" class="login">&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;</a>
+			            <img src="images/common/header_line.jpg">
+			            <a href="register.html" class="login">&nbsp;&nbsp;免费注册&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		            </span>
+		            <span id="login_info" style="display: none;">
+		            	<a href="javascript:void(0)" id="headerUsername" class="login"></a>
+			            <img src="images/common/header_line.jpg">
+			            <a href="javascript:void(0)" id="headerLogout" class="login">&nbsp;&nbsp;退出</a>
+		            </span>
+	        	</div>
+		        <ul class="my_action fix">
+		            <li>
+		                <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的关注</a>
+		            </li>
+		            <li>
+		                <img src="images/common//mix_car.png">
+		                <a href="cart.html">购物车<span id="cartQuantity">[0]</span></a>
+		            </li>
+		            <li>
+		                <a href="#">我的商城</a>
+		            </li>
+		        </ul>
+			</div>
+		</header>
+		<!--头部导航结束-->
+		<!--Logo和头部搜索开始-->
+	
+	<div class="action_search_box content_box">
+	    <a class="logo" href="index.html"></a>
+	    <div class="inputbox">
+	        <input type="text" id="keyword" name="keyword"  placeholder="请输入您感兴趣的内容">
+	        <button class="searchbtn" id="searchBtn">搜&nbsp;索</button>
+	         <div class="hotword">热销：
+	            <a href="product_search.html?name=润滑油" target="_blank">&nbsp;&nbsp;&nbsp;闸板泵&nbsp;&nbsp;&nbsp;</a>
+	        </div>
+	    </div>
+	    <img class="telephonenumber" src="images/common/telephone_number.jpg">
+	</div>
+	<!--Logo和头部搜索结束-->
+	<!--分割线-->
+	<hr style="height: 1px; border: none; border-top: 1px solid #DDD; margin: 25px 0px 25px 0px;">
+
+	<div class="content_box clear_fix">
+	<!--我的左侧菜单开始-->
+		<div class="left_nav l">
+		 	<div class="person_info clearfix">
+		        <div class="head_img">
+		            <img src="images/common/level.png" alt="">
+		        </div>
+		        <div class="welcome_info">
+		            hi，亲爱的  欢迎回来
+		        </div>
+		        <div class="level_score">
+		        	<div class="clearfix">
+			            <div class="l">会员等级：</div>
+			            <div class="level_value l">菜鸟</div>
+		            </div>
+		            <div class="clearfix">
+		            <div class="l">会员积分：</div>
+		            <div class="score_value l">0</div>
+		            </div>
+		        </div>
+		    </div>
+		    <div id="my-deal">
+		        <a href="javascript:void(0);">
+		        	<div class="row title">
+		        		<div class="dashed">我的交易</div>
+		        	</div>
+		        </a>
+		         <a href="order_list.html">
+		        	<div class="item active">我的订单</div>
+		        </a>
+		        <a href="cart.html">
+		        	<div class="item  ">我的购物车</div>
+		        </a>
+		        <a href="#"><div class="item ">我的积分购物车</div></a>
+		        <a href="#"><div class="item ">我的积分消费</div></a>
+		        <a href="#"><div class="item ">我的关注</div></a>
+		        <a href="#"><div class="item ">我的购买咨询</div></a>
+		        <a href="#"><div class="item ">我的优惠券</div></a>
+		        <div class="item "><a href="address_management.html">收货地址管理</a></div>
+		        <a href="#"><div class="item ">我的推荐</div></a>
+		    </div>
+		    <div id="my-account">
+		        <a href="javascript:;">
+		        	<div class="title">
+		        		<div class="dashed">我的账户</div>
+		        	</div>
+		        </a>
+		        <a href="#"><div class="item ">个人资料</div></a> 
+		        <a href="#"><div class="item ">修改密码</div></a>
+		    </div>
+		</div>    
+		<!--我的左侧菜单结束-->
+    	<!--右侧订单信息-->
+	    <div class="shopcar_right_box l">
+	    	<div class="right_nav clearfix">
+	            <ul class="l">
+	                <li class="nav_item on l pr" data-status="0">全部订单<span class="list_num" id="all_num"></span></li>
+	                <li class="nav_item l pr" data-status="1">待付款<span class="list_num" id="no_pay_num"></span></li>
+	                <li class="nav_item l pr" data-status="3">待收货<span class="list_num" id="unshipped_num"></span></li>
+	               <!-- <li class="nav_item l pr" data-status="30">已发货<span class="list_num">(0)</span></li>
+	                -->
+	            </ul>
+	            <div class="bread_nav r">您所在位置：我的交易 &gt; 我的订单</div>
+	        </div>
+        
+
+            <div class="user_order" id="allOrder">
+                <div class="order_tit clearfix">
+                    <p class=" item_01 l" style="text-align:left;margin-left:42px">商品信息</p>
+                    <p class=" item_02 l">单价（元）</p>
+                    <p class=" item_03 l">数量</p>
+                    <p class=" item_04 l">实付款</p>
+                    <p class=" item_05 l">交易状态</p>
+                    <p class=" item_06 l">交易操作</p>
+                </div>
+            	<div class="order_list">
+	            	<ul id="order-list-container">
+
+					</ul>
+            	</div>
+   		 	</div>
+   		 		<!--分页 start-->
+				<div class="page">
+					<a class="btn_prev" href="javascript:void(0)">上一页</a>
+					<span>
+						<a href="javascript:void(0)" class="page_num on"></a>
+					</span>
+					<a class="btn_next" href="javascript:void(0)">下一页</a>
+					<span class="page_count"></span>
+				</div>
+				<!--分页 end-->
+	</div>
+	</div>
+	<!--产品服务开始-->
+	<div id="product_service" class="content_box clearfix">
+        <ul>
+            <li class="item l">
+                <p class="item_icon icon1 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">真实货源</p>
+                    <p class="text_info">一手货源&nbsp;真实存在</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon2 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">品质保障</p>
+                    <p class="text_info">垂直专业&nbsp;优选厂商</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon3 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">服务保障</p>
+                    <p class="text_info">专业服务团队</p>
+                </div>
+            </li>
+            <li class="item l">
+                <p class="item_icon icon4 l"></p>
+                <div class="item_text l">
+                    <p class="text_tit">交易透明</p>
+                    <p class="text_info">买卖双方面谈价格</p>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<!--产品服务结束-->
+	<!--底部开始-->
+	<div class="footerbox">
+        <div class="footer">
+	        <div class="content_box clearfix">
+	            <div class="footerinside">
+	                <h1>新手指南</h1>
+	                <a href="#" target="_blank">免费注册</a>
+	                <a href="#" target="_blank">个人资料及密码</a>
+	                <a href="#" target="_blank">商品关注</a>
+	                <a href="#" target="_blank">查询订单</a>
+	                <a href="#" target="_blank">购物流程</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>付款/退款</h1>
+	                <a href="#" target="_blank">在线支付</a>
+	                <a href="#" target="_blank">银行转账</a>
+	                <a href="#" target="_blank">发票办理</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>配送方式</h1>
+	                <a href="#" target="_blank">快递配送</a>
+	                <a href="#" target="_blank">零担物流</a>
+	            </div>
+	            <div class="footerinside">
+	                <h1>售后服务</h1>
+	                <a href="#" target="_blank">退货流程</a>
+	                <a href="#" target="_blank">退货政策</a>
+	            </div>
+	            <div id="currentfooterInside" class="footerinside">
+	                <h1>帮助中心</h1>
+	                <a href="#" target="_blank">常见热点问题</a>
+	                <a href="#" target="_blank">联系我们</a>
+	                <a href="#" target="_blank">投诉与建议</a>
+	            </div>
+	        </div>
+        </div>
+
+        <div class="copyright_bgcolor">
+	        <div class="copyright">Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X</div>
+        </div>
+    </div>
+	<!--底部结束-->
+
+
+
+
+</body>
+</html>
+
+
+<!--订单中列表项模板-->
+<script id="order-item-tpl" type="text/x-handlebars-template">
+{{#each this}}
+	<li class="list_item">
+		<div class="order_mess clearfix">
+			<a class="order_detail order_detail_6 r confirm_receipt"  data-orderno={{orderNo}} data-status={{status}} style="display:none">确认收货</a>
+			<a class="order_detail order_detail_6 r pay_order{{status}}" id="pay_order" href="order_detail.html?orderNo={{orderNo}}" data-status={{status}}>立即付款</a>
+            <a href="order_detail.html?orderNo={{orderNo}}" target="_blank" class="order_number l" style="margin: 0 10px;">	订单编号：{{orderNo}}</a>
+            <p class="order_date l">下单时间：{{created}}</p>
+            <p class="order_date l" style="padding-left: 25px;">收件人：{{deliveryName}}</p>
+            <p class="order_date order_amount r">订单总额：{{amount}}</p>  
+			<p class="order_date r" >订单状态：{{statusDesc}}</p> 
+        </div>
+        <div class="clearfix">
+        {{#each orderItems}}
+            <div class="order_list_content oh clearfix">
+                <div class="center_box l item_01">
+                    <div class=" goods_info">  
+                            <div class="goods_info_info l">
+                                <h3 class="goods_name"><a href="product_detail.html?pid={{goodsId}}" 
+	                    target="_blank">{{goodsName}}</a></h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="center_box l item_02" style="margin-left: 40px;">
+                    <p class="center_item goods_price">￥{{curPrice}}</p>
+                </div>
+                <div class="center_box l item_03">
+                    <p class="center_item goods_num">{{quantity}}</p>
+                </div>
+                <div class="center_box l item_04">
+                    <div class="center_item">
+                    	￥{{totalPrice}}
+                    </div>
+                </div>
+ 				<div class="center_box l item_05">
+                    <div class="center_item">
+                    	{{statusDesc}}
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+    </li>
+ {{/each}}
+</script>

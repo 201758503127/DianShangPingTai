@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<context:component-scan base-package="cn.techaction" annotation-config="true" />
+
+	<aop:aspectj-autoproxy />
+
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="order" value="2" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:DataSource.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 数据源 -->
+	<bean id="dataSourceTarget" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${db.driverClassName}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+		<!-- 连接池启动时的初始值 -->
+		<property name="initialSize" value="${db.initialSize}" />
+		<!-- 连接池最大值 -->
+		<property name="maxActive" value="${db.maxActive}" />
+		<!-- 最大空闲值 -->
+		<property name="maxIdle" value="${db.maxIdle}" />
+		<!-- 最小空闲值 -->
+		<property name="minIdle" value="${db.minIdle}" />
+		<!-- 最大连接等待时间 -->
+		<property name="maxWait" value="${db.maxWait}" />
+		<property name="defaultAutoCommit" value="${db.defaultAutoCommit}" />
+		<property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}" />
+	</bean>
+
+	<!-- 对数据源进行代理 -->
+	<bean id="proxyDataSource"
+		class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+		<constructor-arg>
+			<ref bean="dataSourceTarget" />
+		</constructor-arg>
+	</bean>
+	
+	<!-- 直接使用数据源的代理对象 -->
+	<bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner">
+		<constructor-arg>
+			<ref bean="proxyDataSource" />
+		</constructor-arg>
+	</bean>
+	
+	<!-- 事物管理器 -->
+	<bean id="transcationManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="proxyDataSource" />
+	</bean>
+	
+	<!-- 配置事务通知属性 -->
+	<tx:advice id="txAdvice" transaction-manager="transcationManager">
+		<!-- 定义事务传播属性 -->
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="clear*" propagation="REQUIRED" />
+			<tx:method name="edit*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="remove*" propagation="REQUIRED" />
+			<tx:method name="generate" propagation="REQUIRED" />
+			<tx:method name="reset*" propagation="REQUIRED" />
+			<tx:method name="get*" propagation="SUPPORTS" />
+			<tx:method name="find*" propagation="SUPPORTS" />
+			<tx:method name="load*" propagation="SUPPORTS" />
+			<tx:method name="search*" propagation="SUPPORTS" />
+			<tx:method name="*" propagation="SUPPORTS" />
+		</tx:attributes>
+	</tx:advice>
+</beans>

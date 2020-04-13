@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*头部搜索开始*/
+.action_search_box{padding-top:18px}
+.logo{ background-image:url(../images/common/logo.png); background-repeat:no-repeat; display:block; width:199px; height:61px; float:left; margin-right:132px}
+.inputbox{
+	float: left;
+	height: 58px;
+	padding-top: 2px;
+	width:540px;
+	line-height: 58px;
+	
+}
+.inputbox input{
+    line-height: 35px;
+}
+.inputbox input{ width:438px; height:35px; border:#41b6e7 2px solid; font-size:14px; color:#333333; padding-left:4px;outline:none; float:left}
+.searchbtn{border: 0px solid #ccc; width:84px; background-color:#41b6e7; height:35px;  font-size:16px;  display:block; line-height:35px; float:left; text-align:center; color:#333333;}
+.hotword{ float:none; line-height:19px; clear:both; color:#999999; width:524px; padding-top:4px}
+.hotword a{ color:#999999; border-right:1px #c2c1c1 solid}
+.telephonenumber{ margin-left:45px; float:left}
+/*头部搜索结束*/
+
+/*产品路径导航开始*/
+.productnav { margin: 10px 0; }
+.productnav span{ margin-right: 5px;}
+.productnav span a{ color:#666666;}
+/*产品路径导航结束*/

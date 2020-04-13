@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户登陆</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/common_head.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script src="js/site/require.js" defer async="true" data-main="js/site/login_main"></script>
+</head>
+<body>
+	<!--Logo和头部搜索开始-->
+    <div>
+        <div class="action_search_box content_box">
+            <a class="logo" href="index.html"></a>
+        </div>
+        <!--Logo和头部搜索结束-->
+        <!--分割线-->
+        <hr style="height: 1px; border: none; border-top: 1px solid #DDD; margin: 25px 0 0px;">
+    </div>
+	<!-- 中间登录 -->
+    <div>
+		<form id="loginForm" action="#" method="post" novalidate="novalidate">
+			<div class="login_box">
+				<div class="login_box_left">
+			    	<h1>一个账号，玩转商城所有服务！</h1>
+			        <h2>购机械，购二手装备，购配件，购模型，服务保修</h2>
+			        <div class="login_tip" style="display: none;">*您的账号密码不匹配，请重新输入</div>
+			        <div class="login_name_box">
+                        <div class="login_name_icon"></div>
+                        <input type="text" id="username" name="username" class="loginname" maxlength="25" tabindex="1" placeholder="用户名/已验证的手机号码">
+                    </div>
+                    <div class="check_code_tip" id="usernameError" style="display: none;"></div>
+			        <div class="login_code_box">
+			        	<div class="login_code_icon"></div>
+			        	<input type="password" id="password" name="password" class="logincode" maxlength="20" tabindex="2" autocomplete="off" placeholder="密码">
+			        </div>
+			        <div class="check_code_tip" id="passwordError" style="display: none;"></div>	
+			         <div class="forg_code_box">
+			    		<input type="checkbox" id="isRememberUsername" name="isRememberUsername" value="true" tabindex="4">
+			            <span>&nbsp;&nbsp;&nbsp;记住用户名</span>
+			            <a href="password_back.html">忘记密码</a>
+			            <a href="register.html">免费注册</a>
+			   		 </div>
+			         <input type="button" class="login_btn" style="width:341px;cursor:pointer;" value="登&nbsp;&nbsp;&nbsp;录">
+			    </div>			     
+			    <div class="login_box_right">			    	
+			    </div>
+			</div>
+		</form>
+	</div>
+	<!--产品服务开始-->
+    <div>
+        <div id="product_service" class="content_box clearfix">
+            <ul>
+                <li class="item l">
+                    <p class="item_icon icon1 l"></p>
+                    <div class="item_text l">
+                        <p class="text_tit">真实货源</p>
+                        <p class="text_info">一手货源&nbsp;真实存在</p>
+                    </div>
+                </li>
+                <li class="item l">
+                    <p class="item_icon icon2 l"></p>
+                    <div class="item_text l">
+                        <p class="text_tit">品质保障</p>
+                        <p class="text_info">垂直专业&nbsp;优选厂商</p>
+                    </div>
+                </li>
+                <li class="item l">
+                    <p class="item_icon icon3 l"></p>
+                    <div class="item_text l">
+                        <p class="text_tit">服务保障</p>
+                        <p class="text_info">专业服务团队</p>
+                    </div>
+                </li>
+                <li class="item l">
+                    <p class="item_icon icon4 l"></p>
+                    <div class="item_text l">
+                        <p class="text_tit">交易透明</p>
+                        <p class="text_info">买卖双方面谈价格</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	<!--产品服务结束-->
+	<!--底部开始-->
+        <div class="footerbox">
+            <div class="copyright_bgcolor">
+                <div class="copyright">Copyright © 2018 XXXX数字科技有限公司 版权所有 保留一切权利 鲁ICP备XXXXXXXX号-X</div>
+            </div>
+        </div>
+	<!--底部结束-->
+    </div>
+</body>
+</html>

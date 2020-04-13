@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body { font: 14px/1.8 'helvetica neue',tahoma,'hiragino sans gb',stheiti,
+'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif; color: #555;background: #fff;}
+body, h1, h2, h3, h4, p, ul, ol, dd, dl, form { margin: 0;}
+input, button, select { font-size: 100%; box-sizing: border-box;margin: 0; padding: 0; 
+  vertical-align: middle; border: 1px solid #ccc; outline: none;line-height: normal;}
+textarea { overflow: auto; height: auto; resize: vertical;vertical-align: top;}
+img {max-width: 100%; vertical-align: top;border: 0 ;height: auto; 
+  -ms-interpolation-mode: bicubic;}
+ul { padding-left: 0; list-style-type: none;}
+i, b {font-weight: normal; font-style: normal;}
+a { text-decoration: none; outline: none;color:inherit;*color: #555;}
+a:hover { color: #0087ce;}
+
+/* html5 ele */
+article, aside, dialog, footer, header, section, nav, figure, menu { display: block;}
+audio, canvas, progress, video {display: inline-block;vertical-align: baseline; }
+
+
+
+::-moz-selection {color: #fff; background: #0087b3; }
+::selection {color: #fff; background: #0087b3; }
+
+
+hr {
+    -moz-box-sizing: content_box;
+    box-sizing: content_box;
+    height: 0;
+}
+
+
+img {
+    border: 0;
+}
+button,
+input,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; 
+    cursor: pointer; 
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content_box;
+    -webkit-box-sizing: content_box; /* 2 */
+    box-sizing: content_box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; 
+    vertical-align: top; 
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*通用CSS样式*/
+.clearfix { *zoom: 1; *clear: both;}
+.clearfix:before, .clearfix:after { display: table; clear: both; content: '';}
+ 
+.oh { overflow: hidden; *zoom: 1;}
+.l { float: left;}.r { float: right;}
+.dib { display: inline-block; *display: inline; *zoom: 1;}
+.pr { position: relative;}.pa { position: absolute;}
+.tc { text-align: center;}.tr { text-align: right;}
+.el { overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.hide { display: none;}
+.hidetext { font: 0/0 a; letter-spacing: -9px;}
+.opc0 { opacity: 0 ; filter: alpha(opacity=0);}

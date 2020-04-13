@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.login_box{ width:800px;  margin:0 auto; margin-top:42px;margin-bottom:42px;overflow: hidden;}
+.login_box_left{ float:left;width: 550px;}
+.login_box_left h1{ font-size:23px; font-weight:bold; color:#333333;margin-bottom: 25px;}
+.login_box_left h2{ font-size:14px; font-weight:normal; margin-bottom:40px; color:#333333}
+
+.login_label{ width:100px; height:38px ;  float:left;line-height: 38px; text-align: right;margin-right: 10px;}
+.login_input{ width:284px; height:36px;outline:none; padding-left:16px;line-height: 36px;border:1px solid #bdbdbd; float: left;display: block}
+
+.login_input_box{overflow:hidden; margin-top:18px;}
+.login_input{ width:284px; height:36px;outline:none; padding-left:16px;line-height: 36px;}
+
+.check_code_btn{
+    float: left;
+    width: 130px;
+    height: 32px;
+   
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 32px;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top:0px;
+}
+.login_input_box .disabled{
+	background: #f2f2f2;
+	color: #9999a3;
+}
+.send_code{
+    color:#333333;
+}
+
+.register_btn{ display:block; text-align:center; font-size:20px;
+color:#4c4c4c; background-color:#41b6e7; line-height:40px; font-weight:bold; margin-top:8px;
+width: 170px;
+    height: 40px;
+    margin-left: 66px;
+    cursor:pointer;
+}
+
+.login_box_right{ float:right; border-left:1px #ccc solid; padding-left:34px; width:235px;margin-bottom:174px;display: none;}
+.login_box_right h1{ font-size:16px; font-weight:bold; line-height:24px}
+.login_box_right_insidebox{width:220px;margin-top:60px;padding-left:15px;}
+.login_box_right .login_box_right_insidebox a{ display:block; float:left; }
+.login_box_right .login_box_right_insidebox a img{ float:left;margin-bottom:20px;}
+.login_box_right .login_box_right_insidebox a p{ float:left;font-size:14px; line-height:44px;padding-left:10px;padding-right:30px;}
+.protocol_tip{
+    margin-left: 66px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.protocol_tip a{
+    color:#41b6e7;
+}
+.error_tip{
+    float: left;
+    line-height: 33px;
+    color:#ff0101;
+    margin-left: 10px;
+    display: none;
+}
